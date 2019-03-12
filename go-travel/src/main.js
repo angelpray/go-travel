@@ -11,6 +11,11 @@ import 'styles/normalize.css'
 import 'styles/border.css'
 // 引入iconfont.css
 import 'styles/iconfont.css'
+// 引入轮播插件
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 /* eslint-disable no-new */
