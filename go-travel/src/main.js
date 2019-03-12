@@ -6,10 +6,11 @@ import router from './router'
 // 移动设备click延迟300ms解决方案,fastclick
 import fastClick from 'fastclick'
 // 导入normalize.css
-import './assets/styles/normalize.css'
+import 'styles/normalize.css'
 // 1像素边框问题
-import './assets/styles/border.css'
-
+import 'styles/border.css'
+// 引入iconfont.css
+import 'styles/iconfont.css'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 /* eslint-disable no-new */
