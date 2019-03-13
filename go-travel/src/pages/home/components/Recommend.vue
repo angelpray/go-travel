@@ -4,7 +4,7 @@
       热销推荐
     </div>
     <ul>
-      <li class='item border-bottom' v-for='(item, index) of list' :key='index'>
+      <li class='item border-bottom' v-for='(item, index) of recommendList' :key='index'>
         <img class='item-img'
         :src='item.imgUrl' alt=''>
         <div class='item-info'>
@@ -20,22 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      list: [{
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_250x250_02eb6e72.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '谁说童话里都是骗人的？'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_250x250_02eb6e72.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '谁说童话里都是骗人的？'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_250x250_02eb6e72.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '谁说童话里都是骗人的？'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>

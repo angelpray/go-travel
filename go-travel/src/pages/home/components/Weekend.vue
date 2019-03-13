@@ -4,7 +4,7 @@
       周末去哪儿
     </div>
     <ul>
-      <li class='item border-bottom' v-for='(item, index) of list' :key='index'>
+      <li class='item border-bottom' v-for='(item, index) of weekendList' :key='index'>
         <div class="img-wrapper">
           <img class='item-img'
           :src='item.imgUrl' alt=''>
@@ -21,22 +21,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      list: [{
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '谁说童话里都是骗人的？'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '谁说童话里都是骗人的？'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '谁说童话里都是骗人的？'
-      }]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>
