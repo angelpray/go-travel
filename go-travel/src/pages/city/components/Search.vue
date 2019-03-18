@@ -6,7 +6,7 @@
 
 <script>
 export default {
- name: "CitySearch"
+  name: 'CitySearch'
 }
 </script>
 
@@ -26,4 +26,3 @@ export default {
       padding 0 .1rem
       color #666
 </style>
-
