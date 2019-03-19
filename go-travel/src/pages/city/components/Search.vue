@@ -32,20 +32,19 @@ export default {
   watch: {
     keyword () {
       if (this.timer) {
-        clearTimeout(this.timer);
+        clearTimeout(this.timer)
       }
       this.timer = setTimeout(() => {
-        var result = [];
-        for ( let key in this.cities) {
+        var result = []
+        for (let key in this.cities) {
           this.cities[key].forEach((value) => {
-            if (value.name.indexOf(this.keyword) !== -1 ||
-                value.spell.indexOf(this.keyword) !== -1) {
-                  result.push(value);
-                }
+            if (value.name.indexOf(this.keyword) !== -1 || value.spell.indexOf(this.keyword) !== -1) {
+              result.push(value)
+            }
           })
         }
-        this.list = result;
-      }, 100);
+        this.list = result
+      }, 100)
     }
   },
   computed: {
@@ -53,9 +52,9 @@ export default {
       return !this.list.length
     }
   },
-  mounted() {
+  mounted () {
     this.scroll = new Bscroll(this.$refs.search)
-  },
+  }
 }
 </script>
 
